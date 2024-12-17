@@ -261,7 +261,7 @@ int TunInterfaceThread::threadFunction()
 {
     char threadName[16];
     if(debug) *debugout << currentTime() << ": Tun Thread " << std::to_string(threadNumber) << ": Starting" << std::endl;
-    threadId = gettid();
+    threadId = getgid();
     snprintf(threadName, 15, "gwlbtun T%03d", threadNumber);
     pthread_setname_np(pthread_self(), threadName);
 
