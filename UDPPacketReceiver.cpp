@@ -199,7 +199,7 @@ int UDPPacketReceiverThread::threadFunction()
     // Static packet processing buffers.
     pktbuf = new unsigned char[65535];
     control = new unsigned char[2048];
-    threadId = gettid();
+    threadId = getgid();
     snprintf(threadName, 15, "gwlbtun U%03d", threadNumber);
     pthread_setname_np(pthread_self(), threadName);
 
