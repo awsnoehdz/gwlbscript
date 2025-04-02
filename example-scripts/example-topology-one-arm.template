@@ -1,4 +1,4 @@
-----
+---
 AWSTemplateFormatVersion: "2010-09-09"
 Description: Set up a demonstration topology for using gwlbtun in one-arm mode
 Parameters:
